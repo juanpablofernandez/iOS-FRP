@@ -159,6 +159,7 @@
 				TargetAttributes = {
 					55687EED1DDE0C4400334DC9 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V92SZ8966T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -374,7 +375,9 @@
 			baseConfigurationReference = 82AC1796E69395A156ACC4FA /* Pods-RxOpenWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V92SZ8966T;
 				INFOPLIST_FILE = RxOpenWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.nikolasburk.RxOpenWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,7 +390,9 @@
 			baseConfigurationReference = D7D1A76038BF047017DE562B /* Pods-RxOpenWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V92SZ8966T;
 				INFOPLIST_FILE = RxOpenWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.nikolasburk.RxOpenWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
