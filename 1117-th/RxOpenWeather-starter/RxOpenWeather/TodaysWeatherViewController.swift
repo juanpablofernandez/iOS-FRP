@@ -29,10 +29,10 @@ class TodaysWeatherViewController: UIViewController {
     }
     
     func setupObservers() {
-        let maybeWeatherObservable: Observable<Weather?> = cityTextField.rx.text.asObservable().throttle(0.75, scheduler: MainScheduler.instance).flatMapLatest { (weather: Weather)
+        let maybeWeatherObservable: Observable<Weather?> = cityTextField.rx.text.asObservable().throttle(0.75, scheduler: MainScheduler.instance).flatMapLatest { (weather: Weather) in
+            
             
         }
     }
-    
 }
 

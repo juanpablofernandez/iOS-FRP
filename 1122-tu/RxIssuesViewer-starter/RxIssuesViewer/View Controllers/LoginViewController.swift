@@ -9,12 +9,16 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-  
-  @IBAction func loginButtonPressed() {
-    let urlString = RxGitHubAPI.loginURL()
-    if let url = URL(string: urlString) {
-      UIApplication.shared.open(url, options: [:])
+    
+    @IBAction func loginButtonPressed() {
+        let urlString = RxGitHubAPI.loginURL()
+        if let url = URL(string: urlString) {
+            UIApplication.shared.open(url, options: [:]) { values in
+                switch values {
+                case true: self.performSegue(withIdentifier: "loggedIn", sender: self)
+                default: break
+                }
+            }
+        }
     }
-  }
-  
 }
